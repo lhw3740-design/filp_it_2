@@ -1,6 +1,6 @@
 (()=>{"use strict";
 const $=s=>document.querySelector(s), score=$("#score"),burns=$("#burns"),time=$("#time"),bestScore=$("#bestScore"),bestSurvival=$("#bestSurvival"),msg=$("#msg"),marker=$("#marker"),pancake=$("#pancake"),flip=$("#flip"),start=$("#start"),pause=$("#pause"),mute=$("#mute"),overlay=$("#overlay"),otitle=$("#otitle"),otext=$("#otext"),obtn=$("#obtn");
-const DIFFICULTY={easy:.16,hard:.10}; const ACTIVE_DIFFICULTY=DIFFICULTY.easy;
+const DIFFICULTY={easy:.16,hard:.10}; const ACTIVE_DIFFICULTY=DIFFICULTY.hard;
 const MAX_BURNS=3;
 const DEFAULT={bestScore:0,bestSurvival:0};
 let s={running:false,paused:false,score:0,burns:0,bounces:0,time:30,pos:Math.random(),dir:1,bestScore:0,bestSurvival:0,muted:false},last=0,raf=0,audio=null;
